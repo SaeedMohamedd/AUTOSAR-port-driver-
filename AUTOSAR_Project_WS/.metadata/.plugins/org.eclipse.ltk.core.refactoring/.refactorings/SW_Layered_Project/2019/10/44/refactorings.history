@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SW_Layered_Project/port_cfg.h&apos; to &apos;Port_Cfg.h&apos;" description="Rename resource &apos;port_cfg.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="port_cfg.h" name="Port_Cfg.h" stamp="1572497032348" updateReferences="true"/>
+</session>

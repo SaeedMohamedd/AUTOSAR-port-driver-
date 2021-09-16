@@ -1,0 +1,47 @@
+10:25:54 **** Incremental Build of configuration Debug for project SW_Layered_Project ****
+make all 
+Building file: ../Port.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"Port.d" -MT"Port.o" -c -o "Port.o" "../Port.c"
+In file included from ../Micro_Config.h:22,
+                 from ../Port.h:16,
+                 from ../Port.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Port.c: In function 'Port_Init':
+../Port.c:59: warning: assignment discards qualifiers from pointer target type
+../Port.c:61: warning: assignment discards qualifiers from pointer target type
+../Port.c:63: warning: assignment discards qualifiers from pointer target type
+../Port.c:65: warning: assignment discards qualifiers from pointer target type
+../Port.c:73: warning: assignment makes pointer from integer without a cast
+../Port.c:75: warning: assignment makes pointer from integer without a cast
+../Port.c:77: warning: assignment makes pointer from integer without a cast
+../Port.c:79: warning: assignment makes pointer from integer without a cast
+../Port.c:81: warning: assignment makes pointer from integer without a cast
+../Port.c:83: warning: assignment makes pointer from integer without a cast
+../Port.c:85: warning: assignment makes pointer from integer without a cast
+Finished building: ../Port.c
+ 
+Building target: SW_Layered_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SW_Layered_Project.map -mmcu=atmega16 -o "SW_Layered_Project.elf"  ./App.o ./Button.o ./Det.o ./Dio.o ./Dio_PBcfg.o ./Gpt.o ./Led.o ./Os.o ./Port.o ./Port_PBcfg.o ./Project.o   
+Finished building target: SW_Layered_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SW_Layered_Project.elf  >"SW_Layered_Project.lss"
+Finished building: SW_Layered_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 SW_Layered_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    3544 bytes (21.6% Full)
+(.text + .data + .bootloader)
+
+Data:        150 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
